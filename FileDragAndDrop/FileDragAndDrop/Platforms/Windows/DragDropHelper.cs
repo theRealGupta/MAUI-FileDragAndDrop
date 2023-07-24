@@ -73,7 +73,7 @@ public static class DragDropHelper
         if (e.DataView.Contains(StandardDataFormats.StorageItems))
         {
             var deferral = e.GetDeferral();
-            var extensions = new List<string> {".jpg,jpeg,.png,.bmp"};
+            var extensions = new List<string> {".jpg",".jpeg",".png",".bmp"};
             var isAllowed = false;
             var items = await e.DataView.GetStorageItemsAsync();
             foreach (var item in items)
